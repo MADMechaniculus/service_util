@@ -8,7 +8,7 @@
 #include <boost/system/error_code.hpp>
 #endif
 
-#include "time.h"
+#include <ctime>
 #include <vector>
 
 #ifdef USE_BOOST

@@ -2,7 +2,7 @@
 // Created by madded on 13.07.2021.
 //
 
-#include "../headers/service/service.h"
+#include "service.h"
 #include <ctime>
 
 // Получение смещения
