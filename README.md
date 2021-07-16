@@ -9,18 +9,18 @@
 ...
 
 INCLUDES += some.h \
-            <path>/service.h
+            c://libs//service_util-master//`service.h`
             
 SOURCES += main.cpp \
-            <path>/service.cpp
+           c://libs//service_util-master///`service.cpp`
 ...
 ```
 Для CMake
 ```cmake
 ...
 
-include_directories(<path>/*service.h*)
-add_executable(${NAME_OF_PROJECT} main.cpp ... *service.cpp*)
+include_directories(c://libs//service_util-master///`service.h`)
+add_executable(${NAME_OF_PROJECT} main.cpp ... c://libs//service_util-master//`service.cpp`)
 
 ...
 ```
