@@ -29,6 +29,7 @@ time_t custom_time::from_ISS_to_UTC(time_t iss_time) {
     return ret;
 }
 
+#ifdef USE_BOOST
 template<class T>
 async_containers::async_vector_wrapper<T>::async_vector_wrapper() {
     this->data_ptr = vec.data();
@@ -162,3 +163,4 @@ bool async_containers::async_vector_wrapper<T>::copy_data_from_async_vec(async_v
         return true;
     }
 }
+#endif

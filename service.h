@@ -1,19 +1,26 @@
 #ifndef SERVICE_H
 #define SERVICE_H
 
+#define USE_BOOST
+
+#ifdef USE_BOOST
 #include <boost/thread/thread.hpp>
 #include <boost/system/error_code.hpp>
+#endif
 
 #include "time.h"
 #include <vector>
 
+#ifdef USE_BOOST
 //Макрос для заворачивания lock_guard
 #define BOOST_LOCK(mx) boost::lock_guard<boost::mutex> lock(mx)
+#endif
 
 //cout функции для отладки (deprecated)
 #define DEBUG std::cout << "[DEBUG] "
 #define ERROR std::cout << "[ERROR] "
 
+#ifdef USE_BOOST
 // Обёртка над стандартным вектором для использования в асинхронных операциях
 namespace async_containers {
     template<class storage_t>
@@ -74,6 +81,7 @@ namespace async_containers {
                                       boost::system::error_code &err);
     };
 }
+#endif
 
 //Функции преобразования времени
 namespace custom_time {
