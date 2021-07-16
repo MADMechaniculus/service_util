@@ -8,10 +8,11 @@
 ...
 
 INCLUDES += some.h \
-            <path>/*service.h*
+            <path>/service.h
             
 SOURCES += main.cpp \
-            <path>/*service.cpp*
+            <path>/service.cpp
+...
 ```
 Для CMake
 ```cmake
