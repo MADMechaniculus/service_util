@@ -8,8 +8,8 @@
 ```qmake 
 ...
 
-INCLUDES += some.h \
-            c://libs//service_util-master//service.h
+HEADERS += some.h \
+           c://libs//service_util-master//service.h
             
 SOURCES += main.cpp \
            c://libs//service_util-master//service.cpp
