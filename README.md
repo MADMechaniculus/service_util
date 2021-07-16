@@ -24,3 +24,6 @@ add_executable(${NAME_OF_PROJECT} main.cpp ... c://libs//service_util-master//se
 
 ...
 ```
+*Важное замечание!*
+
+Чтобы всё заработало, нужно правильно указать `#include` путь к файлу `service.h`
