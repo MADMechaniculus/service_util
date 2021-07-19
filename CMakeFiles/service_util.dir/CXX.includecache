@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/madded/CPPSPACE/build_scripts/libs/service_util/service.cpp
+service.h
+/home/madded/CPPSPACE/build_scripts/libs/service_util/service.h
+ctime
+-
+
+/home/madded/CPPSPACE/build_scripts/libs/service_util/service.h
+boost/thread/thread.hpp
+-
+boost/system/error_code.hpp
+-
+ctime
+-
+vector
+-
+
