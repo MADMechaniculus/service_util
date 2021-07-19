@@ -1,7 +1,7 @@
 #ifndef SERVICE_H
 #define SERVICE_H
 
-#define USE_BOOST
+//#define USE_BOOST
 
 #ifdef USE_BOOST
 #include <boost/thread/thread.hpp>
